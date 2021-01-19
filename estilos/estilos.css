@@ -1,0 +1,39 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    padding: 6px;
+    height: 48px;
+}
+
+.menu-header {
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    justify-content: flex-end;
+    align-content: center;
+    grid-column-gap: 15px;
+    /* align-items: center; */
+    height: 100%;
+    /* border: 1px solid red; */
+}
+
+.menu-header a {
+    font: 13px/27px Arial,sans-serif;
+    /* line-height: 24px; */
+    color: rgba(0,0,0,0.87);
+}
+
+.menu-header svg {
+    /* color: rgba(0,0,0,0.87); */
+    /* font-size: 13px; */
+}
