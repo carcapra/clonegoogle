@@ -61,7 +61,7 @@ header {
 
 .section-principal-hero {
     margin: 0 auto;
-    width: 50%;
+    width: 40%;
     height: 78vh;
     /* background-color: burlywood; */
     display: flex;
@@ -72,7 +72,7 @@ header {
 .container {
     width: 100%;
     display: grid;
-    grid-template: 72px 44px 30px 30px / 1fr 1fr 1fr 1fr ;
+    grid-template: 72px 35px 30px 30px / 1fr 1fr 1fr 1fr ;
     grid-row-gap: 25px;
     /* border: 1px solid red; */
 }
@@ -90,6 +90,7 @@ header {
     border-radius: 24px;
     /* background-color: red; */
     border: 1px solid #DFE1E5;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
 }
 
 .item:nth-of-type(1) img {
@@ -99,15 +100,86 @@ header {
 
 .container-input {
     padding: 5px 8px 0 14px;
-    height: 39px;
+    height: 29px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .cont-figure-search {
     display: flex;
     align-items: center;
     margin-top: -5px;
+    margin-left: 5px;
     padding-right: 13px;
     width: 20px;
     height: 100%;
 }
 
+.container-input input {
+    width: 90%;
+    margin-top: -5px;
+}
+
+#voiceSearchButton {
+    width: 14px;
+    height: 16px;
+    margin-top: -5px;
+    margin-right: 5px;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/512px-Google_mic.svg.png) no-repeat center;
+    background-size: 14px 16px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    height: 100%;
+}
+
+.btn_auxiliares {
+    grid-column: 1 / span 4;
+    display: flex;
+    justify-content: center;
+}
+
+.btn_auxiliares button{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 12px;
+    /* line-height: 27px; */
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    margin: 0 15px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+}
+
+.footer-country, .nav-footer {
+    height: 50%;
+    background-color: #F2F2F2;
+    border-top: 1px solid #DADCE0;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.cont-footerAux {
+    width: 40%;
+    display: inherit;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer span {
+    font-size: 12px;
+    color: rgba(0,0,0,.54);
+}
